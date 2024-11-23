@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <img src="avatar.png" alt="Avatar" class="avatar">
+            <div class="score">
+                <span>20 <img src="coin.png" alt="Coin" class="icon"></span>
+                <span>3 <img src="heart.png" alt="Heart" class="icon"></span>
+            </div>
+            <img src="reload.png" alt="Reload" class="reload">
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <div class="question">
+            <p>Question 4 of 10</p>
+        </div>
+
+        <div class="main-content">
+            <div class="character">
+                <img src="character.png" alt="Character">
+            </div>
+            <div class="prompt">
+                <p>Arraste e solte as letras correspondentes.</p>
+                <div class="input-area">
+                    <span class="drop-zone" data-letter="H">H</span>
+                    <span class="drop-zone" data-letter="E">_</span>
+                    <span class="drop-zone" data-letter="L">L</span>
+                    <span class="drop-zone" data-letter="O">_</span>
+                </div>
+                <div class="drag-letters">
+                    <div class="draggable" draggable="true" data-letter="I">I</div>
+                    <div class="draggable" draggable="true" data-letter="L">L</div>
+                    <div class="draggable" draggable="true" data-letter="A">A</div>
+                    <div class="draggable" draggable="true" data-letter="E">E</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

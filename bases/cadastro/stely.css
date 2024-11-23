@@ -1,0 +1,118 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7e6;
+    overflow: hidden;
+}
+
+.signup-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-elements .planet {
+    position: absolute;
+    width: 150px;
+    animation: float 4s ease-in-out infinite;
+}
+
+.planet1 {
+    top: 10%;
+    left: 10%;
+}
+
+.planet2 {
+    bottom: 15%;
+    right: 10%;
+}
+
+.rocket {
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+    width: 100px;
+    animation: moveUpDown 2s infinite alternate;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+.signup-box {
+    background-color: #ffd966;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    width: 400px;
+}
+
+.signup-box h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.signup-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.signup-box .input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.signup-box input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    flex: 1;
+}
+
+.signup-box button {
+    padding: 10px;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-box button:hover {
+    background-color: #ff6700;
+}
+
+.login-link {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.login-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}

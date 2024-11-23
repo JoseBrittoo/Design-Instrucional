@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete a Frase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="avatar.png" alt="Avatar" class="avatar">
+            <div class="score">
+                <span>20 <img src="coin.png" alt="Coin" class="icon"></span>
+                <span>3 <img src="heart.png" alt="Heart" class="icon"></span>
+            </div>
+            <img src="reload.png" alt="Reload" class="reload">
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <!-- Question Section -->
+        <div class="question">
+            <p>Question 6 of 10</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="prompt">
+                <p>Fale no microfone para completar a frase sobre você.</p>
+            </div>
+            <div class="sentence">
+                <p>My name is <span id="name-blank">______</span>, and I am <span id="age-blank">______</span> years old.</p>
+            </div>
+            <button id="start-recording" class="record-button">🎤</button>
+            <p id="output" class="output-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

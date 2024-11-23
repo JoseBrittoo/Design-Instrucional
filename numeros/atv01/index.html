@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers in English</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="avatar.png" alt="Avatar" class="avatar">
+            <div class="score">
+                <span>20 <img src="coin.png" alt="Coin" class="icon"></span>
+                <span>3 <img src="heart.png" alt="Heart" class="icon"></span>
+            </div>
+            <img src="reload.png" alt="Reload" class="reload">
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <!-- Question Section -->
+        <div class="question">
+            <p>Question 1 of 10</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="character">
+                <img src="character.png" alt="Character">
+            </div>
+            <div class="prompt">
+                <p>Lista dos números de 0 a 20 em Inglês</p>
+                <div class="numbers-list">
+                    <div class="number-row">
+                        <button class="audio-button" data-number="0">🔊</button> <span>0 Zero</span>
+                    </div>
+                    <div class="number-row">
+                        <button class="audio-button" data-number="1">🔊</button> <span>1 One</span>
+                    </div>
+                    <div class="number-row">
+                        <button class="audio-button" data-number="2">🔊</button> <span>2 Two</span>
+                    </div>
+                    <!-- Add rows for numbers 3 to 20 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
