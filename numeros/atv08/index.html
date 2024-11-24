@@ -1,44 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Complete a Frase</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FKJB English</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="game-container">
-        <!-- Header Section -->
-        <div class="header">
-            <img src="avatar.png" alt="Avatar" class="avatar">
-            <div class="score">
-                <span>20 <img src="coin.png" alt="Coin" class="icon"></span>
-                <span>3 <img src="heart.png" alt="Heart" class="icon"></span>
-            </div>
-            <img src="reload.png" alt="Reload" class="reload">
-        </div>
+    <div class="background">
+        <main class="activity-container">
+            <!-- Barra superior -->
+            <header class="top-bar">
+                <!-- Ícone do perfil -->
+                <div class="profile-icon">
+                    <img src="assets/especialista.png" alt="Ícone do especialista" />
+                </div>
 
-        <!-- Progress Bar -->
-        <div class="progress-bar">
-            <div class="progress"></div>
-        </div>
+                <!-- Pontuação e vidas -->
+                <div class="score-lives">
+                    <span>
+                        <img class="moeda" src="assets/moeda.png" alt="Ícone de moeda" /> 0
+                    </span>
+                    <span>
+                        <img src="assets/coracao.png" alt="Ícone de coração" /> 3
+                    </span>
+                </div>
 
-        <!-- Question Section -->
-        <div class="question">
-            <p>Question 6 of 10</p>
-        </div>
+                <!-- Botão próximo -->
+                <button id="next-button" class="next-button" aria-label="Próxima questão">
+                    <img src="assets/button.png" alt="Botão próximo" />
+                </button>
+            </header>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <div class="prompt">
-                <p>Fale no microfone para completar a frase sobre você.</p>
+            <!-- Barra de progresso -->
+            <div class="progress-bar-container">
+                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <div class="sentence">
-                <p>My name is <span id="name-blank">______</span>, and I am <span id="age-blank">______</span> years old.</p>
+
+            <!-- Título da questão -->
+            <h2 class="question-title">Pergunta 1 de 10</h2>
+
+            <!-- Instruções e personagem -->
+            <section class="instructions">
+                <img src="assets/personagem1.png" alt="Imagem do personagem com uma expressão explicativa" class="character" />
+                <p class="instruction-text">Ouça o áudio e digite o número falado.</p>
+            </section>
+
+            <!-- Frase com campos em branco -->
+            <section class="sentence-section">
+                <p class="sentence">
+                    My name is <span id="name-blank" class="blank">______</span>, and I am <span id="age-blank" class="blank">______</span> years old.
+                </p>
+            </section>
+
+            <!-- Botão de gravação -->
+            <div class="audio-container">
+                <button id="start-recording" class="record-button" aria-label="Iniciar gravação">
+                    🎤 Gravar
+                </button>
             </div>
-            <button id="start-recording" class="record-button">🎤</button>
-            <p id="output" class="output-text"></p>
-        </div>
+
+            <!-- Exibição do texto gravado -->
+            <p id="output" class="output-text" aria-live="polite"></p>
+        </main>
     </div>
     <script src="script.js"></script>
 </body>

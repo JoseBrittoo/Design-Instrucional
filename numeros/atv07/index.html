@@ -1,45 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ouça e Digite</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FKJB English</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="game-container">
-        <!-- Header Section -->
-        <div class="header">
-            <img src="avatar.png" alt="Avatar" class="avatar">
-            <div class="score">
-                <span>20 <img src="coin.png" alt="Coin" class="icon"></span>
-                <span>3 <img src="heart.png" alt="Heart" class="icon"></span>
+    <div class="background">
+        <main class="activity-container">
+            <!-- Barra superior -->
+            <header class="top-bar">
+                <!-- Ícone do perfil -->
+                <div class="profile-icon">
+                    <img src="assets/especialista.png" alt="Ícone do especialista" />
+                </div>
+
+                <!-- Pontuação e vidas -->
+                <div class="score-lives">
+                    <span>
+                        <img class="moeda" src="assets/moeda.png" alt="Ícone de moeda" /> 0
+                    </span>
+                    <span>
+                        <img src="assets/coracao.png" alt="Ícone de coração" /> 3
+                    </span>
+                </div>
+
+                <!-- Botão próximo -->
+                <button id="next-button" class="next-button" aria-label="Próxima questão">
+                    <img src="assets/button.png" alt="Botão próximo" />
+                </button>
+            </header>
+
+            <!-- Barra de progresso -->
+            <div class="progress-bar-container">
+                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                </div>
             </div>
-            <img src="reload.png" alt="Reload" class="reload">
-        </div>
 
-        <!-- Progress Bar -->
-        <div class="progress-bar">
-            <div class="progress"></div>
-        </div>
+            <!-- Título da questão -->
+            <h2 class="question-title">Pergunta 1 de 10</h2>
 
-        <!-- Question Section -->
-        <div class="question">
-            <p>Question 5 of 10</p>
-        </div>
+            <!-- Instruções e personagem -->
+            <section class="instructions">
+                <img src="assets/personagem1.png" alt="Imagem do personagem com uma expressão explicativa" class="character" />
+                <p class="instruction-text">Ouça o audio e digite o número falado</p>
+            </section>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <div class="prompt">
-                <p>Ouça o áudio e digite o número falado</p>
-            </div>
+            <!-- Botão de áudio -->
             <div class="audio-container">
-                <button id="play-audio" class="audio-button">▶️</button>
-                <div class="audio-visualizer"></div>
+                <button id="play-audio" class="audio-button" aria-label="Tocar áudio">
+                    ▶️
+                </button>
+                <div class="audio-visualizer" aria-hidden="true"></div>
             </div>
-            <input type="text" id="user-input" class="input-field" placeholder="Digite o número">
-            <button id="submit-answer" class="submit-button">Enviar</button>
-        </div>
+
+            <!-- Entrada do usuário -->
+            <section class="user-input-section">
+                <label for="user-input" class="input-label">Sua resposta:</label>
+                <input type="text" id="user-input" class="input-field" placeholder="Digite o número" aria-label="Digite sua resposta aqui">
+                <button id="submit-answer" class="submit-button" aria-label="Enviar resposta">Enviar</button>
+            </section>
+        </main>
     </div>
     <script src="script.js"></script>
 </body>

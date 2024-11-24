@@ -1,32 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Números em Inglês</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FKJB English</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="game-container">
-        <!-- Header Section -->
-        <div class="header">
-            <img src="avatar.png" alt="Avatar" class="avatar">
-            <div class="score">
-                <span>20 <img src="coin.png" alt="Coin" class="icon"></span>
-                <span>3 <img src="heart.png" alt="Heart" class="icon"></span>
+    <div class="background">
+        <div class="activity-container">
+            <!-- Barra superior -->
+            <header class="top-bar">
+                <div class="profile-icon">
+                    <img src="assets/especialista.png" alt="Especialista" />
+                </div>
+                <div class="score-lives">
+                    <span>
+                        <img class="moeda" src="assets/moeda.png" alt="Moeda" /> 0
+                    </span>
+                    <span>
+                        <img src="assets/coracao.png" alt="Coração" /> 3
+                    </span>
+                </div>
+                <button id="next-button" class="next-button">
+                    <img src="assets/button.png" alt="Próximo" />
+                </button>
+            </header>
+
+            <!-- Barra de progresso -->
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
             </div>
-            <img src="reload.png" alt="Reload" class="reload">
-        </div>
 
-        <!-- Progress Bar -->
-        <div class="progress-bar">
-            <div class="progress"></div>
-        </div>
-
-        <!-- Question Section -->
-        <div class="question">
-            <p>Question 3 of 10</p>
-        </div>
+            <!-- Título da questão -->
+            <h2 class="question-title">Question 1 of 10</h2>
 
         <!-- Main Content -->
         <div class="main-content">

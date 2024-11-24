@@ -1,55 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Combinar Números</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FKJB English</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="game-container">
-        <!-- Header Section -->
-        <div class="header">
-            <img src="avatar.png" alt="Avatar" class="avatar">
-            <div class="score">
-                <span>20 <img src="coin.png" alt="Coin" class="icon"></span>
-                <span>3 <img src="heart.png" alt="Heart" class="icon"></span>
-            </div>
-            <img src="reload.png" alt="Reload" class="reload">
-        </div>
-
-        <!-- Progress Bar -->
-        <div class="progress-bar">
-            <div class="progress"></div>
-        </div>
-
-        <!-- Question Section -->
-        <div class="question">
-            <p>Extra</p>
-        </div>
-
-        <!-- Main Content -->
-        <div class="main-content">
-            <div class="prompt">
-                <p>Clique para combinar o número e seu nome.</p>
-            </div>
-            <div class="game-board">
-                <div class="numbers">
-                    <button class="number" data-pair="two">2</button>
-                    <button class="number" data-pair="twelve">12</button>
-                    <button class="number" data-pair="seventeen">17</button>
-                    <button class="number" data-pair="eight">8</button>
+    <div class="background">
+        <main class="activity-container">
+            <!-- Barra superior -->
+            <header class="top-bar">
+                <!-- Ícone do perfil -->
+                <div class="profile-icon">
+                    <img src="assets/especialista.png" alt="Ícone do especialista" />
                 </div>
-                <div class="words">
-                    <button class="word" data-pair="two">Two</button>
-                    <button class="word" data-pair="twelve">Twelve</button>
-                    <button class="word" data-pair="seventeen">Seventeen</button>
-                    <button class="word" data-pair="eight">Eight</button>
+
+                <!-- Pontuação e vidas -->
+                <div class="score-lives">
+                    <span class="score">
+                        <img class="moeda" src="assets/moeda.png" alt="Ícone de moeda" /> 
+                        <span id="score-value">0</span>
+                    </span>
+                    <span class="lives">
+                        <img src="assets/coracao.png" alt="Ícone de coração" /> 
+                        <span id="lives-value">3</span>
+                    </span>
                 </div>
-            </div>
-            <button id="submit-button" class="submit-button">Finalizar</button>
-            <p id="feedback" class="feedback"></p>
-        </div>
+
+                <!-- Botão próximo -->
+                <button id="next-button" class="next-button" aria-label="Próxima questão">
+                    <img src="assets/button.png" alt="Botão próximo" />
+                </button>
+            </header>
+
+            <!-- Barra de progresso -->
+            <section class="progress-section">
+                <div class="progress-bar-container">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </section>
+
+            <!-- Título da questão -->
+            <section class="question-section">
+                <h2 class="question-title">Pergunta 1 de 10</h2>
+            </section>
+
+            <!-- Instruções e personagem -->
+            <section class="instructions">
+                <img src="assets/personagem1.png" alt="Imagem do personagem explicativo" class="character" />
+                <p class="instruction-text">Clique para combinar o número e seu nome.</p>
+            </section>
+
+            <!-- Tabuleiro do jogo -->
+            <section class="game-board">
+                <div class="numbers" aria-label="Escolha um número">
+                    <button class="number" data-pair="two" aria-label="Número 2">2</button>
+                    <button class="number" data-pair="twelve" aria-label="Número 12">12</button>
+                    <button class="number" data-pair="seventeen" aria-label="Número 17">17</button>
+                    <button class="number" data-pair="eight" aria-label="Número 8">8</button>
+                </div>
+                <div class="words" aria-label="Escolha uma palavra">
+                    <button class="word" data-pair="two" aria-label="Palavra Two">Two</button>
+                    <button class="word" data-pair="twelve" aria-label="Palavra Twelve">Twelve</button>
+                    <button class="word" data-pair="seventeen" aria-label="Palavra Seventeen">Seventeen</button>
+                    <button class="word" data-pair="eight" aria-label="Palavra Eight">Eight</button>
+                </div>
+            </section>
+
+            <!-- Botão de finalizar -->
+            <section class="submit-section">
+                <button id="submit-button" class="submit-button">Finalizar</button>
+            </section>
+
+            <!-- Feedback -->
+            <section class="feedback-section">
+                <p id="feedback" class="feedback" aria-live="polite"></p>
+            </section>
+        </main>
     </div>
     <script src="script.js"></script>
 </body>
