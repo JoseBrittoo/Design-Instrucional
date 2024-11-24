@@ -175,3 +175,8 @@ body, html {
     align-items: center;
   }
   
+  .feedback {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
