@@ -56,7 +56,7 @@ body, html {
     
     .progress-bar {
       background: #FFD700;
-      width: 10%; 
+      width: 20%; 
       height: 100%;
       border-radius: 10px;
     }
@@ -119,69 +119,69 @@ body, html {
     .instruction-text {
       background: #fff;
       color: #000;
-      height: 80px;
+      height: 90px;
       width: 100%; 
       padding: 10px;
       border-radius: 20px;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: bold;
       display: flex; 
       justify-content: center; 
       align-items: center; 
     }
   
-  
-  .activity {
-    text-align: center;
-  }
-  
-  .character img {
-    width: 80px;
-    margin-bottom: 10px;
-  }
-  
-  .speech-bubble {
-    background: white;
-    color: black;
-    padding: 10px;
-    border-radius: 10px;
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  
-  .audio-player {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    .audio-player {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px; 
   }
   
   .audio-icon {
-    font-size: 20px;
+      background: #F5A623;
+      color: #fff;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 50%;
+      margin: 20px 0;
+      border: none;
+      cursor: pointer;
+      width: 90px;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .pairs {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    margin-top: 90px;
   }
   
-  .audio-bar {
-    background: #FFFFFF;
-    height: 10px;
-    width: 200px;
-    border-radius: 5px;
-  }
-  
-  .options button {
+  .letter {
     background: white;
     color: black;
-    border: none;
-    margin: 5px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    width: 30px;  /* Define a largura fixa */
+    height: 30px; /* Define a altura fixa */
+    padding: 15px; 
+    border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
   }
   
-  .options button:hover {
-    background: #F5A623;
+  .pairs button:hover {
+      background: #F5A623;
   }
+  
+  .feedback {
+      margin-top: 5px;
+      font-size: 16px;
+      font-weight: bold;
+  }
+  
   

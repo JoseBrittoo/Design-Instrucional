@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const feedback = document.getElementById("feedback");
   const nextButton = document.getElementById('next-button');
 
-  let selectedLetter = null; // Para armazenar a letra selecionada
-  let selectedSound = null; // Para armazenar o som selecionado
+  let selectedLetter = null;
+  let selectedSound = null;
 
   // Redirecionar ao clicar no botão "Próximo"
   if (nextButton) {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const audio = new Audio(audioPath);
       audio.play();
 
-      selectedSound = button.getAttribute("data-pair"); // Capturar o som selecionado
+      selectedSound = button.getAttribute("data-pair");
       checkPair(); // Verificar se formou o par correto
     });
   });
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Marcar a letra selecionada
   letters.forEach((letter) => {
     letter.addEventListener("click", () => {
-      selectedLetter = letter.getAttribute("data-pair"); // Capturar a letra selecionada
+      selectedLetter = letter.getAttribute("data-pair");
       checkPair(); // Verificar se formou o par correto
     });
   });
