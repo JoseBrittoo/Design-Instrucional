@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FKJB English</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link para seu CSS -->
+</head>
+<body>
+    <div class="background">
+        <div class="activity-container">
+            <!-- Barra superior -->
+            <div class="top-bar">
+                <div class="profile-icon">
+                    <img src="assets/especialista.png" alt="Especialista" />
+                </div>
+                <div class="score-lives">
+                    <span><img class="moeda" src="assets/moeda.png" alt="moeda" /> 0</span>
+                    <span><img src="assets/coracao.png" alt="coração" /> 3</span>
+                </div>
+                <button id="next-button" class="next-button">
+                    <img src="assets/button.png" alt="próximo" />
+                </button>
+            </div>
+
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+
+            <h2 class="question-title">Question 1 of 10</h2>
+
+             <!-- Instruções e personagem -->
+             <div class="instructions">
+                <img src="assets/personagem1.png" alt="Personagem" class="character" />
+                <div class="instruction-text">
+                    Ouça o áudio dos ingredientes da salada de frutas e preencha as lacunas arrastando as letras correspondentes
+                </div>
+            </div>
+                
+
+                <div class="audio-container">
+                    <button class="audio-button">▶️</button>
+                    <div class="audio-wave"></div>
+                </div>
+
+                <!-- Área para as letras a serem arrastadas -->
+                <div class="input-area">
+                    <div class="drop-zone" data-letter="A">_</div>
+                    <div class="drop-zone" data-letter="P">_</div>
+                    <div class="drop-zone" data-letter="P">_</div>
+                    <div class="drop-zone" data-letter="L">_</div>
+                    <div class="drop-zone" data-letter="E">_</div>
+                </div>
+
+                <!-- Letras para arrastar -->
+                <div class="draggable-letters">
+                    <div class="draggable" draggable="true" data-letter="A">A</div>
+                    <div class="draggable" draggable="true" data-letter="G">G</div>
+                    <div class="draggable" draggable="true" data-letter="P">P</div>
+                    <div class="draggable" draggable="true" data-letter="N">N</div>
+                </div>
+            </div>
+
+            <!-- Botão de finalizar -->
+            <button class="finish-button">Finalizar</button>
+        </div>
+    </div>
+
+    <!-- Link para o script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

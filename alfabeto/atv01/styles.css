@@ -95,13 +95,13 @@ body, html {
     margin-right: 5px;
   }
 
-  .reset-button {
+  .next-button {
     background: none;
     border: none;
     cursor: pointer;
   }
   
-  .reset-button img {
+  .next-button img {
     width: 100%; 
     height: 45px;
   }

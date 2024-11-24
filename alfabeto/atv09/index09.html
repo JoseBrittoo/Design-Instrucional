@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FKJB English</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link para seu CSS -->
+</head>
+<body>
+    <div class="background">
+        <div class="activity-container">
+            <!-- Barra superior -->
+            <div class="top-bar">
+                <div class="profile-icon">
+                    <img src="assets/especialista.png" alt="Especialista" />
+                </div>
+                <div class="score-lives">
+                    <span><img class="moeda" src="assets/moeda.png" alt="moeda" /> 0</span>
+                    <span><img src="assets/coracao.png" alt="coração" /> 3</span>
+                </div>
+                <button id="next-button" class="next-button">
+                    <img src="assets/button.png" alt="próximo" />
+                </button>
+            </div>
+
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+            <h2 class="question-title">Question 1 of 10</h2>
+
+            <!-- Instruções e personagem -->
+            <div class="instructions">
+                <img src="assets/personagem1.png" alt="Personagem" class="character" />
+                <div class="instruction-text">
+                    Encontre todos os pares correspondentes!
+                </div>
+            </div>
+
+            <!-- Alfabeto -->
+            <div class="alphabet-container">
+                <div class="alphabet-row">
+                    <span>A</span>
+                    <span>B</span>
+                    <span class="clickable" data-letter="C">_</span>
+                    <span class="clickable" data-letter="D">_</span>
+                    <span>E</span>
+                    <span>F</span>
+                    <span class="clickable" data-letter="G">_</span>
+                    <span>H</span>
+                    <span>I</span>
+                </div>
+                <div class="alphabet-row">
+                    <span class="clickable" data-letter="J">_</span>
+                    <span>K</span>
+                    <span>L</span>
+                    <span>M</span>
+                    <span class="clickable" data-letter="N">_</span>
+                    <span>O</span>
+                    <span>P</span>
+                    <span>Q</span>
+                    <span class="clickable" data-letter="R">_</span>
+                </div>
+                <div class="alphabet-row">
+                    <span>S</span>
+                    <span>T</span>
+                    <span class="clickable" data-letter="U">_</span>
+                    <span class="clickable" data-letter="V">_</span>
+                    <span>W</span>
+                    <span>X</span>
+                    <span class="clickable" data-letter="Y">_</span>
+                    <span>Z</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
