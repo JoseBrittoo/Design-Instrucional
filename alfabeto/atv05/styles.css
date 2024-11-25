@@ -56,7 +56,7 @@ body, html {
     
     .progress-bar {
       background: #FFD700;
-      width: 10%; 
+      width: 50%; 
       height: 100%;
       border-radius: 10px;
     }
@@ -131,13 +131,13 @@ body, html {
     }
     
 .image-container img {
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
     margin: 10px 0;
 }
 
 .word-display {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     margin: 10px 0;
 }
@@ -146,16 +146,35 @@ body, html {
     background-color: #ffcc00;
     border: none;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin-top: 10px;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    font-size: 40px;
+}
+#feedback-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: none; /* Para mostrar somente quando houver feedback */
 }
 
-.mic-button img {
-    width: 25px;
-    height: 25px;
+#feedback-container.visible {
+  display: block;
 }
+

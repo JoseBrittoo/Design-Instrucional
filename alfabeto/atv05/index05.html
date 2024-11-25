@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FKJB English</title>
     <link rel="stylesheet" href="styles.css" />
-    <!-- Link para seu CSS -->
 </head>
 <body>
     <div class="background">
@@ -13,38 +12,42 @@
             <!-- Barra superior -->
             <div class="top-bar">
                 <div class="profile-icon">
-                    <img src="assets/especialista.png" alt="Especialista" />
+                    <img src="\assets\especialista.png" alt="Especialista" />
                 </div>
                 <div class="score-lives">
-                    <span><img class="moeda" src="assets/moeda.png" alt="moeda" /> 0</span>
-                    <span><img src="assets/coracao.png" alt="coração" /> 3</span>
+                    <span><img class="moeda" src="\assets\moeda.png" alt="moeda" /> 0</span>
+                    <span><img src="\assets\coracao.png" alt="coração" /> 3</span>
                 </div>
                 <button id="next-button" class="next-button">
-                    <img src="assets/button.png" alt="próximo" />
+                    <img src="\assets\button.png" alt="próximo" />
                 </button>
             </div>
 
             <div class="progress-bar-container">
                 <div class="progress-bar"></div>
             </div>
-            <h2 class="question-title">Question 1 of 10</h2>
+            <h2 class="question-title">Question 5 of 10</h2>
 
             <!-- Instruções e personagem -->
             <div class="instructions">
-                <img src="assets/personagem1.png" alt="Personagem" class="character" />
+                <img src="\assets\personagem1.png" alt="Personagem" class="character" />
                 <div class="instruction-text">
-                    Encontre todos os pares correspondentes!
+                    Soletre a palavra abaixo
                 </div>
             </div>
                 <div class="image-container">
-                    <img src="apple.png" alt="Apple">
+                    <img src="\assets\alfabeto\apple.png" alt="Apple">
                 </div>
                 <div class="word-display">
                     <p>Apple</p>
                 </div>
-                <button class="mic-button">
-                    <img src="microphone.png" alt="Microphone">
+
+                <button id="mic-button" class="mic-button">
+                    🎙️
                 </button>
+                <div id="feedback-container">
+                    <p id="feedback"></p>
+                </div>
             </div>
         </div>
     </div>
