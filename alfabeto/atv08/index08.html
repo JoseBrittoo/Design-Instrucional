@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FKJB English</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="background">
+        <div class="activity-container">
+            <!-- Barra superior -->
+            <div class="top-bar">
+                <div class="profile-icon">
+                    <img src="\assets\especialista.png" alt="Especialista" />
+                </div>
+                <div class="score-lives">
+                    <span><img class="moeda" src="\assets\moeda.png" alt="moeda" /> 0</span>
+                    <span><img src="\assets\coracao.png" alt="coração" /> 3</span>
+                </div>
+                <button id="next-button" class="next-button">
+                    <img src="\assets\button.png" alt="próximo" />
+                </button>
+            </div>
+
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+            <h2 class="question-title">Question 8 of 10</h2>
+
+            <!-- Instruções e personagem -->
+            <div class="instructions">
+                <img src="\assets\personagem1.png" alt="Personagem" class="character" />
+                <div class="instruction-text">
+                    Clique em cada espaço vazio e preencha com a letra que falta!
+                </div>
+            </div>
+            
+            <!-- Letras com espaços -->
+            <div class="letters-container">
+                <div class="letter">A</div>
+                <div class="letter">B</div>
+                <input type="text" maxlength="1" class="letter-input" data-correct="C" />
+                <div class="letter">D</div>
+                <div class="letter">E</div>
+                <input type="text" maxlength="1" class="letter-input" data-correct="F" />
+                <div class="letter">G</div>
+                <div class="letter">H</div>
+                <div class="letter">I</div>
+                <input type="text" maxlength="1" class="letter-input" data-correct="J" />
+                <div class="letter">K</div>
+                <div class="letter">L</div>
+                <div class="letter">M</div>
+                <input type="text" maxlength="1" class="letter-input" data-correct="N" />
+                <div class="letter">O</div>
+                <div class="letter">P</div>
+                <input type="text" maxlength="1" class="letter-input" data-correct="Q" />
+                <div class="letter">R</div>
+                <div class="letter">S</div>
+                <div class="letter">T</div>
+                <input type="text" maxlength="1" class="letter-input" data-correct="U" />
+                <div class="letter">V</div>
+                <div class="letter">W</div>
+                <input type="text" maxlength="1" class="letter-input" data-correct="X" />
+                <input type="text" maxlength="1" class="letter-input" data-correct="Y" />
+                <div class="letter">Z</div>
+                
+            </div>
+
+            <button id="mic-button" class="mic-button">
+                🎙️
+            </button>
+
+            <!-- Botão de verificar -->
+            <button id="verify-button" class="verify-button">Verificar</button>
+            <p id="feedback" class="feedback"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
