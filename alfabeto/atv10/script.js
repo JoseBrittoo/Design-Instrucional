@@ -3,8 +3,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const letterBoxes = document.querySelectorAll(".letter-box"); // Campos de lacunas
     const finishButton = document.querySelector(".finish-button"); // Botão de finalizar
     const feedback = document.createElement("div"); // Elemento de feedback dinâmico
+    const nextButton = document.getElementById('next-button');
     feedback.id = "feedback";
     document.body.appendChild(feedback);
+
+    // Redirecionar ao clicar no botão "Próximo"
+  if (nextButton) {
+    nextButton.addEventListener("click", () => {
+      window.location.href = "/bases/menu/index.html";
+    });
+  } else {
+    console.error('Botão "Próximo" não encontrado!');
+  }
   
     // Adicionar eventos de arrastar às letras
     draggables.forEach((draggable) => {
