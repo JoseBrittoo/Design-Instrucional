@@ -130,7 +130,6 @@ body, html {
     align-items: center; 
   }
 
-  
   .pairs {
     display: flex;
     justify-content: space-around;
