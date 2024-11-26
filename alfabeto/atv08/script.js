@@ -10,7 +10,7 @@ let currentSlot = null;
 // Redirecionar ao clicar no botão "Próximo"
 if (nextButton) {
     nextButton.addEventListener("click", () => {
-        window.location.href = "/alfabeto/atv08/index08.html";
+        window.location.href = "/alfabeto/atv09/index09.html";
     });
 } else {
     console.error('Botão "Próximo" não encontrado!');
