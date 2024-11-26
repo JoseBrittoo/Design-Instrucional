@@ -87,8 +87,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (currentIndex < correctName.length) {
         alert("Você ainda não completou o nome!");
       } else {
-        alert("Pronto para a próxima atividade!");
-        // Adicione lógica aqui para avançar para a próxima atividade
+        // Redireciona para a tela 10
+        window.location.href = "/alfabeto/atv10/index10.html";
       }
     });
   });
