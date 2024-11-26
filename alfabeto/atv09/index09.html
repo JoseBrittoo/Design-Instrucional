@@ -13,68 +13,53 @@
             <!-- Barra superior -->
             <div class="top-bar">
                 <div class="profile-icon">
-                    <img src="assets/especialista.png" alt="Especialista" />
+                    <img src="\assets\especialista.png" alt="Especialista" />
                 </div>
                 <div class="score-lives">
-                    <span><img class="moeda" src="assets/moeda.png" alt="moeda" /> 0</span>
-                    <span><img src="assets/coracao.png" alt="coração" /> 3</span>
+                    <span><img class="moeda" src="\assets\moeda.png" alt="moeda" /> 0</span>
+                    <span><img src="\assets\coracao.png" alt="coração" /> 3</span>
                 </div>
                 <button id="next-button" class="next-button">
-                    <img src="assets/button.png" alt="próximo" />
+                    <img src="\assets\button.png" alt="próximo" />
                 </button>
             </div>
 
             <div class="progress-bar-container">
                 <div class="progress-bar"></div>
             </div>
-            <h2 class="question-title">Question 1 of 10</h2>
-
-            <!-- Instruções e personagem -->
-            <div class="instructions">
-                <img src="assets/personagem1.png" alt="Personagem" class="character" />
-                <div class="instruction-text">
-                    Encontre todos os pares correspondentes!
+            <h2 class="question-title">Question 9 of 10</h2>
+            <!-- Dialog Section -->
+            <div class="dialog">
+                <div class="character-dialog">
+                    <img src="\assets\personagem1.png" alt="Character 1" class="character">
+                    <div class="speech-bubble">What's your name?</div>
+                </div>
+                <div class="character-dialog">
+                    <div class="speech-bubble">My name is Mary</div>
+                    <img src="\assets\personagem2.png" alt="Character 2" class="character">
+                </div>
+                <div class="character-dialog">
+                    <img src="\assets\personagem1.png" alt="Character 1" class="character">
+                    <div class="speech-bubble">Can you spell your name, please?</div>
                 </div>
             </div>
+            
+            <p id="feedback" class="feedback"></p>
 
-            <!-- Alfabeto -->
-            <div class="alphabet-container">
-                <div class="alphabet-row">
-                    <span>A</span>
-                    <span>B</span>
-                    <span class="clickable" data-letter="C">_</span>
-                    <span class="clickable" data-letter="D">_</span>
-                    <span>E</span>
-                    <span>F</span>
-                    <span class="clickable" data-letter="G">_</span>
-                    <span>H</span>
-                    <span>I</span>
-                </div>
-                <div class="alphabet-row">
-                    <span class="clickable" data-letter="J">_</span>
-                    <span>K</span>
-                    <span>L</span>
-                    <span>M</span>
-                    <span class="clickable" data-letter="N">_</span>
-                    <span>O</span>
-                    <span>P</span>
-                    <span>Q</span>
-                    <span class="clickable" data-letter="R">_</span>
-                </div>
-                <div class="alphabet-row">
-                    <span>S</span>
-                    <span>T</span>
-                    <span class="clickable" data-letter="U">_</span>
-                    <span class="clickable" data-letter="V">_</span>
-                    <span>W</span>
-                    <span>X</span>
-                    <span class="clickable" data-letter="Y">_</span>
-                    <span>Z</span>
-                </div>
+            <!-- Input Section -->
+            <div class="input-area">
+                <span>_</span>
+                <span>_</span>
+                <span>_</span>
+                <span>_</span>
             </div>
+
+            <!-- Microphone Button -->
+            <button id="mic-button" class="mic-button">
+                🎙️
+            </button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
