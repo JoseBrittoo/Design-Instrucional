@@ -108,11 +108,11 @@ html {
 }
 
 .dialog {
-  margin: 20px 0;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .character-dialog {
@@ -123,28 +123,34 @@ html {
 }
 
 .character {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
+}
+
+.character2 {
+  width: 70px;
 }
 
 .speech-bubble {
   background-color: #ffffff;
   color: #000;
   border-radius: 10px;
-  padding: 10px 15px;
-  font-size: 14px;
+  padding: 10px 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
   position: relative;
-  max-width: 220px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 .speech-bubble::after {
   content: "";
   position: absolute;
   bottom: -10px;
-  left: 20px;
-  width: 0;
-  height: 0;
+  left: 10px;
   border: 10px solid transparent;
   border-top-color: #ffffff;
 }
@@ -152,7 +158,7 @@ html {
 .input-area {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 40px;
   margin: 20px 0;
 }
 
@@ -181,7 +187,7 @@ html {
   align-items: center;
   cursor: pointer;
   font-size: 40px;
-  margin: 20px auto;
+  margin: 70px auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
