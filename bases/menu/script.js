@@ -1,4 +1,3 @@
-// script.js
 document.getElementById('alphabet').addEventListener('click', function() {
     alert('Abrindo lição do Alfabeto!');
 });
