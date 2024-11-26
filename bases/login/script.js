@@ -1,12 +1,13 @@
-// script.js
-document.getElementById('login-form').addEventListener('submit', function(e) {
+document.getElementById('next-button').addEventListener('click', function (e) {
     e.preventDefault();
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
 
+    const username = document.querySelector('input[type="text"]').value;
+    const password = document.querySelector('input[type="password"]').value;
+
+    // Valida se os campos estão preenchidos
     if (username && password) {
         alert(`Bem-vindo, ${username}!`);
-        // Lógica de autenticação pode ser adicionada aqui
+        window.location.href = '/bases/menu/index.html'; 
     } else {
         alert('Por favor, preencha todos os campos.');
     }
