@@ -137,7 +137,6 @@ body, html {
       flex-wrap: wrap;
       margin: 10px 0;
     }
-    
     .letter, .letter-input {
       background: #fff;
       width: 50px;
@@ -149,26 +148,9 @@ body, html {
       font-size: 20px;
       font-weight: bold;
       text-align: center;
-      border: 1px solid #ddd;
+      border: 2px solid #ddd;
     }
     
-    .letter-input {
-      font-size: 20px;
-      text-transform: uppercase;
-      font-weight: bold;
-      outline: none;
-      cursor: pointer;
-    }
-    
-    .verify-button {
-      background: #FFD700;
-      border: none;
-      padding: 10px 20px;
-      font-weight: bold;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 5px;
-    }
     
     .feedback {
       margin-top: 20px;
@@ -191,4 +173,23 @@ body, html {
       transform: translateX(-50%);
       margin-top: 20px;
       font-size: 40px;
+    }
+    .mic-button:hover {
+      background-color: #ffaa00; /* Amarelo escuro */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  .letter-input.correct {
+    background-color: #d4edda; /* Verde claro */
+    border: 2px solid #28a745; /* Verde escuro */
   }
+
+  .letter-input.incorrect {
+    background-color: #f8d7da; /* Vermelho claro */
+    border: 2px solid #dc3545; /* Vermelho escuro */
+  }
+  .letter-input:focus {
+    outline: none;
+    border: 2px solid #007bff; /* Azul escuro */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
