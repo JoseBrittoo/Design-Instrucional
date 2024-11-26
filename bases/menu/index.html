@@ -8,34 +8,69 @@
 </head>
 <body>
     <div class="menu-container">
-        <div class="profile-section">
-            <img src="profile.png" alt="Profile" class="profile-pic">
-            <span class="coins">20</span>
-            <span class="days">1 dia</span>
-            <span class="lives">3</span>
+        <!-- Seção superior -->
+        <div class="top-bar">
+            <div class="profile-icon">
+                <img src="/assets/especialista-icon.png" alt="Perfil" />
+            </div>
+            <div class="score-section">
+                <div class="score-item">
+                    <img src="/assets/moeda.png" alt="Moedas" class="icon" />
+                    <span>20</span>
+                </div>
+                <div class="score-item">
+                    <img src="/assets/calendar.png" alt="Dias" class="icon" />
+                    <span>1 dia</span>
+                </div>
+                <div class="score-item">
+                    <img src="/assets/coracao.png" alt="Vidas" class="icon" />
+                    <span>3</span>
+                </div>
+            </div>
         </div>
 
+        <!-- Caminho das fases -->
         <div class="path">
-            <div class="circle" id="alphabet">
-                <img src="\assets\FaseAlfabeto.png" alt="ABC">
-                <p>Alfabeto <span>1/10</span></p>
+            <!-- Fase Alfabeto -->
+            <div class="circle">
+                <a href="/alfabeto/atv01/index.html" class="phase-link">
+                    <div class="circle-content">
+                        <img src="/assets/FaseAlfabeto.png" alt="ABC">
+                    </div>
+                </a>
+                <p>Alfabeto</p>
             </div>
+
             <div class="dotted-line"></div>
-            <div class="circle" id="numbers">
-                <img src="\assets\FaseNumerica.png" alt="123">
+
+            <!-- Fase Números -->
+            <div class="circle">
+                <a href="/numeros/atv01/index.html" class="phase-link">
+                    <div class="circle-content">
+                        <img src="/assets/FaseNumerica.png" alt="123">
+                    </div>
+                </a>
                 <p>Números</p>
             </div>
+
             <div class="dotted-line"></div>
-            <div class="circle" id="greetings">
-                <img src="\assets\FaseSaudacao.png" alt="Greetings">
+
+            <!-- Fase Saudações e Despedidas -->
+            <div class="circle">
+                <a href="/saud-desp/atv01/index.html" class="phase-link">
+                    <div class="circle-content">
+                        <img src="/assets/FaseSaudacao.png" alt="Greetings">
+                    </div>
+                </a>
                 <p>Saudações e Despedidas</p>
             </div>
         </div>
 
+        <!-- Menu inferior -->
         <div class="menu-bottom">
-            <button class="icon-btn"><img src="profile-icon.png" alt="Profile"></button>
-            <button class="icon-btn"><img src="play-icon.png" alt="Play"></button>
-            <button class="icon-btn"><img src="settings-icon.png" alt="Settings"></button>
+            <button class="icon-btn"><img src="/assets/profile.png" alt="Profile"></button>
+            <button class="icon-btn"><img src="/assets/play.png" alt="Play"></button>
+            <button class="icon-btn"><img src="/assets/Settings.png" alt="Settings"></button>
         </div>
     </div>
     <script src="script.js"></script>
