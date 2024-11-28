@@ -9,3 +9,4 @@ document.getElementById('numbers').addEventListener('click', function() {
 document.getElementById('greetings').addEventListener('click', function() {
     alert('Abrindo lição de Saudações e Despedidas!');
 });
+
