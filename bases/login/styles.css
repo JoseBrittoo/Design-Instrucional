@@ -27,20 +27,23 @@ html {
     text-align: center;
     position: relative;
     width: 470px;
-    height: 480px;
+    height: 440px;
   }
   
   .login-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   
-  .character-left,
+  .character-left{
+    height: auto;
+    width: 110px;
+  }
   .character-right {
-    height: 100%;
-    width: 80px;
+    height: auto;
+    width: 120px;
   }
   
   h1 {
@@ -50,19 +53,20 @@ html {
   }
   
   .input-field {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 30px;
     padding: 10px;
     margin: 20px 0;
     border: 1px solid #a09797c9;
-    border-radius: 5px;
+    border-radius: 16px;
     font-size: 16px;
   }
   
   .login-links {
     text-align: right;
-    color:;
   }
   
   .forgot-link {
@@ -79,15 +83,13 @@ html {
     background-color: #FFFFFF;
     color: #FFCC4D;
     padding: 10px 20px;
+    width: 100px;
+    height: 50px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 16px;
+    font-size: 18px;
     cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .login-button:hover {
-    background-color: #FFDD77;
+    margin-top: 3px;
   }
   
   .register-text {
