@@ -7,7 +7,7 @@ document.getElementById('next-button').addEventListener('click', function (e) {
     // Valida se os campos estão preenchidos
     if (username && password) {
         alert(`Bem-vindo, ${username}!`);
-        window.location.href = '/bases/menu/index.html'; 
+        window.location.href = '/docs/menu/index.html'; 
     } else {
         alert('Por favor, preencha todos os campos.');
     }
